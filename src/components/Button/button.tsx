@@ -28,8 +28,8 @@ const Button: React.FC<ButtonProps> = (props) => {
     const { btnType, className, disabled, size, children, href, ...restProps } = props
     // btn, btn-lg, btn-primary
     const classes = classNames('btn', className, {
-        ['btn-${btnType}']: btnType,
-        ['btn-${btnSize}']: size,
+        [`btn-${btnType}`]: btnType,
+        [`btn-${size}`]: size,
         'disabled': (btnType === ButtonType.Link) && disabled
     })
     if(btnType === ButtonType.Link && href) {
