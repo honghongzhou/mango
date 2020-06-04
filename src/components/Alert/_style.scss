@@ -1,0 +1,27 @@
+.alert {
+    width: 200px;
+    padding: 20px;
+    border-radius: $alert-border-radius;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.flex{
+    @include flex();
+    @include flex-center();
+    @include flex-space();
+}
+
+
+.alert-default {
+    @include alert-style($default)
+}
+.alert-success {
+    @include alert-style($success)
+}
+.alert-danger {
+    @include alert-style($danger)
+}
+.alert-warning {
+    @include alert-style($warning)
+}

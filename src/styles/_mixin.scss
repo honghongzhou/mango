@@ -35,6 +35,23 @@
       border-color: $border;    
     }
   }
+// Alert
+  @mixin alert-style(
+    $background
+  ) {
+    background: $background;
+  }
+
+// Flex
+  @mixin flex {
+    display: flex;
+  }
+  @mixin flex-space {
+    justify-content: space-between;
+  }
+  @mixin flex-center {
+    align-items: center;
+  }
   
   @mixin zoom-animation(
     $direction: 'top',

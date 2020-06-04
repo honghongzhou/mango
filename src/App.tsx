@@ -4,6 +4,8 @@ import Button, { ButtonType, ButtonSize} from './components/Button/button'
 import Menu from './components/Menu/menu'
 import MenuItem from './components/Menu/menuItem'
 
+import Alert, { AlertType } from './components/Alert/alert'
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +18,10 @@ function App() {
       {/* Button */}
       <Button btnType={ButtonType.Primary} size={ButtonSize.Large}>Hello</Button>
       <Button btnType={ButtonType.Link} href='http://www.baidu.com'>Baidu Link</Button>
+
+      {/* Alert */}
+      <Alert title="alert title" type={AlertType.Default}></Alert>
+      <Alert title='title' type={AlertType.Success} description='a paragraph description'></Alert>
     </div>
   );
 }
