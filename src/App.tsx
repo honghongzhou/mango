@@ -22,6 +22,8 @@ function App() {
       {/* Alert */}
       <Alert title="alert title" type={AlertType.Default}></Alert>
       <Alert title='title' type={AlertType.Success} description='a paragraph description'></Alert>
+      <Alert title="alert title" type={AlertType.Danger}></Alert>
+      <Alert title="alert title" type={AlertType.Warning}></Alert>
     </div>
   );
 }
