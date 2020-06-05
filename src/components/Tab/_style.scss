@@ -1,0 +1,21 @@
+.tab {
+    position: relative;
+    width: 500px;
+    @include flex();
+}
+.tab-item {
+    flex: 1;
+    &.is-active{
+        color: $menu-item-active-color;
+        border-bottom: $menu-item-active-border-width solid $menu-item-active-color;
+    }
+}
+.tab-content {
+    position: absolute;
+    left: 0;
+    margin-left: 40px;
+}
+
+ul li {
+    list-style: none;
+}

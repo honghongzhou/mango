@@ -6,6 +6,9 @@ import MenuItem from './components/Menu/menuItem'
 
 import Alert, { AlertType } from './components/Alert/alert'
 
+import Tab from './components/Tab/tab'
+import TabItem from './components/Tab/tabItem'
+
 function App() {
   return (
     <div className="App">
@@ -24,6 +27,19 @@ function App() {
       <Alert title='title' type={AlertType.Success} description='a paragraph description'></Alert>
       <Alert title="alert title" type={AlertType.Danger}></Alert>
       <Alert title="alert title" type={AlertType.Warning}></Alert>
+
+      {/* Tab */}
+      <Tab defaultIndex={0}>
+        <TabItem index={0} label="Tab one">
+          Tab1 Content
+        </TabItem>
+        <TabItem index={1} label="Tab two">
+         Tab2 Content
+        </TabItem>
+        <TabItem index={2} label="Tab three">
+          Tab3 Content
+        </TabItem>
+      </Tab>
     </div>
   );
 }
