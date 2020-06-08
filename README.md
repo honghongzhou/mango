@@ -8,3 +8,14 @@ react hook
 
 ## 其他
 
+## 中转导出
+
+## 新建tsconfig.build.json
+
+## TS => JS
+
+## rimrf 删除的工具
+
+## 发布组件库到npm
+* 
+
