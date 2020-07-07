@@ -37,6 +37,11 @@ const Menu: React.FC<MenuProps> = (props) => {
         index: currentActive ? currentActive : 0,
         onSelect: handleClick
     }
+    const renderChildren = () => {
+        
+    }
+
+
     return (
         <div>
             <ul className={classes} style={style} data-testid='test-menu'>
@@ -48,7 +53,7 @@ const Menu: React.FC<MenuProps> = (props) => {
 
 Menu.defaultProps = {
     defaultIndex: 0,
-    mode: 'vertical'
+    mode: 'horizontal'
 }
 
 export default Menu
