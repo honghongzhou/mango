@@ -19,3 +19,6 @@ const Icon: React.FC<IconProps>  = (props) => {
 }
 
 export default Icon
+
+// extends 接口继承， 从一个接口复制成员到另一个接口，可以接承多个接口
+// 可以更灵活的将接口分割到可重用的模块里

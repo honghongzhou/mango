@@ -10,17 +10,25 @@ import Alert, { AlertType } from "./components/Alert/alert";
 import Tab from "./components/Tab/tab";
 import TabItem from "./components/Tab/tabItem";
 
+// Explicit Import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faAdjust } from "@fortawesome/free-solid-svg-icons";
 
 import Icon from "./components/Icon/icon";
+
+// Build a Library
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
   return (
     <div className="App">
       <p> Font Awesome</p>
       {/* Font Awesome */}
-      <FontAwesomeIcon icon={faCoffee} size="10x" />
+      <FontAwesomeIcon icon={faAdjust} size="10x" />
       <p> Menu </p>
       {/* Menu */}
       <Menu
@@ -77,7 +85,7 @@ function App() {
       </Tab>
       <p>Icon</p>
       {/* Icon */}
-      <Icon icon={faCoffee} theme="danger" size="6x"></Icon>
+      <Icon icon={faAdjust} theme="danger" size="6x"></Icon>
     </div>
   );
 }

@@ -2,6 +2,8 @@ import React, { useState, createContext } from "react";
 import classNames from "classnames";
 import { MenuItemProps } from "./menuItem";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 type MenuMode = "horizontal" | "vertical";
 type SelectCallback = (selectIndex: string) => void;
 
@@ -79,6 +81,8 @@ const Menu: React.FC<MenuProps> = (props) => {
 
   return (
     <div>
+      {/* <FontAwesomeIcon icon="coffee" size="10x" /> */}
+      {/* <FontAwesomeIcon icon={['fab','adn']} size="10x" /> */}
       <ul className={classes} style={style} data-testid="test-menu">
         <MenuContext.Provider value={passedContext}>
           {/* {children} */}
